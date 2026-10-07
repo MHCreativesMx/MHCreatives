@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHCREATIVES - Producción Audiovisual, Marketing y Publicidad</title>
+    <style>
+        /* Paleta de colores base */
+        :root {
+            --primary: #f39c12; /* Acento */
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-main: #ffffff;
+            --text-muted: #aaaaaa;
+        }
+
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+        }
+        
+        header { 
+            padding: 60px 20px; 
+            text-align: center; 
+            background-color: #000; 
+        }
+        
+        header img { 
+            max-width: 250px; 
+            margin-bottom: 20px;
+        }
+        
+        h1 { 
+            font-size: 3em; 
+            margin: 10px 0; 
+            color: var(--primary); 
+            letter-spacing: 2px;
+        }
+        
+        p.tagline { 
+            font-size: 1.2em; 
+            color: var(--text-muted); 
+        }
+        
+        section { 
+            padding: 60px 20px; 
+            max-width: 1100px; 
+            margin: auto; 
+        }
+        
+        h2 { 
+            border-bottom: 2px solid var(--primary); 
+            padding-bottom: 10px; 
+            margin-bottom: 40px; 
+            display: inline-block;
+        }
+        
+        .about-text {
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: var(--text-muted);
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .card { 
+            background: var(--bg-card); 
+            padding: 25px; 
+            border-radius: 12px; 
+            text-align: center; 
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card .media-placeholder {
+            background: #333; 
+            height: 200px; 
+            border-radius: 8px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #777;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        
+        .card img, .card video { 
+    width: 100%; 
+    height: 200px; /* Esto le da una altura fija a todos los cuadros */
+    object-fit: cover; /* Esto recorta y centra el video para que llene el espacio sin deformarse */
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    background-color: #000; /* Fondo negro por si el video tarda en cargar */
+}
+
+        }
+        
+        .footer { 
+            text-align: center; 
+            padding: 20px; 
+            background: #000; 
+            margin-top: 40px; 
+            color: var(--text-muted);
+        }
+        
+        .contact { 
+            text-align: center; 
+        }
+        
+        .contact a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1em;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: #000;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        
+        .contact-btn:hover {
+            background-color: #d68910;
+            color: #fff;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #25D366; /* Color oficial de WhatsApp */
+            color: #fff !important;
+            border-radius: 30px;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Reemplaza "tu_logo.png" con el nombre del archivo de tu logo -->
+    <img src="MH.jpg" alt="Logo MHCREATIVES">
+    <h1>MHCREATIVES</h1>
+    <p class="tagline">Producción Audiovisual | Marketing | Publicidad</p>
+</header>
+
+<section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p class="about-text">
+        Somos una agencia especializada en crear impacto visual, en MHCREATIVES transformamos ideas en experiencias audiovisuales inmersivas y de alta calidad. 
+        Integramos las mejores herramientas tecnológicas, combinando grabaciones aéreas con drones DJI, ediciones precisas y la creación de animaciones 4K y motion graphics en After Effects, garantizando que el mensaje de tu marca destaque y conecte con tu audiencia.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Producción Audiovisual</h3>
+            <p class="about-text">Grabación en 4K, tomas aéreas dinámicas con dron, edición profesional y formatos creativos como stop-motion.</p>
+        </div>
+        <div class="card">
+            <h3>Motion Graphics y Animación</h3>
+            <p class="about-text">Animación de logotipos, intros impactantes para redes sociales y contenido vertical diseñado para destacar en plataformas como TikTok.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing y Publicidad</h3>
+            <p class="about-text">Estrategias de marca, redacción de guiones comerciales persuasivos y campañas publicitarias integrales, integracion Facebook con Pilot Solutions para generar clientes potenciales.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portafolio Destacado</h2>
+    <p class="about-text">Una muestra de nuestros proyectos y colaboraciones recientes:</p>
+    <div class="grid">
+        <div class="card">
+            <div class="media-placeholder"><video src="Institucional Comitan 1.mov" controls></video>.</div>
+            <h3></h3>
+            <p class="about-text">Desarrollo de guiones publicitarios y animación de logotipos.</p>
+        </div>
+        
+        <div class="card">
+            <div class="media-placeholder"><<video src="Jonathan Alfaro.mov" controls></video>.</div>
+            <h3></h3>
+            <p class="about-text">Locución, guiones y producción de video stop-motion..</p>
+        </div>
+        
+        <div class="card">
+            <div class="media-placeholder"><<video src="Copia de Bevit 4.mp4" controls></video>.</div>
+            <h3></h3>
+            <p class="about-text">Diseño de identidad visual, bocetos y renders vectoriales.</p>
+        </div>
+        
+        <div class="card">
+            <div class="media-placeholder"><<video src="1007.mov" controls></video>.</div>            <h3>>
+            <p class="about-text">Animación de logo 4K que fusiona elementos basicos de tu negocio con la tecnologia..</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Trabajemos Juntos</h2>
+    <p class="about-text">¿Listo para llevar la comunicación de tu empresa al siguiente nivel?</p>
+    <p>Ubicados en Comitan,Chiapas, México.</p>
+    
+    <div class="contact-buttons">
+        <a href="mailto:mhcreatives8@gmail.com.com" class="contact-btn">Enviar Correo</a>
+        <!-- REEMPLAZA "529999999999" CON TU NÚMERO DE WHATSAPP -->
+        <a href="https://wa.me/529631115313?text=Hola,%20me%20interesan%20los%20servicios%20de%20MHCREATIVES" target="_blank" class="whatsapp-btn">Contactar por WhatsApp</a>
+    </div>
+</section>
+
+<div class="footer">
+    <p>&copy; 2026 MHCREATIVES. Todos los derechos reservados.</p>
+</div>
+
+</body>
+</html>
